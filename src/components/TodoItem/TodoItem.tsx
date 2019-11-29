@@ -17,12 +17,18 @@ const TodoItemComponent = (props: {todo: Todo}) => {
         todoStore.toggleTodo(todo)
     };
 
+    const onClose= () => {
+        todoStore.removeTodo(todo)
+    };
+
     return (
         <div onClick={onClick}
              className={'item-container panel' + style}
         >
             <div className={'task-block'}>{ props.todo.task }</div>
-            <div className={'priority-block'}> </div>
+            <div onClick={onClose}
+                 className={'close-block'}
+            > </div>
         </div>
     );
 };

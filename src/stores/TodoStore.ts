@@ -71,6 +71,18 @@ export class TodoStore {
         }
     }
 
+    @action
+    removeTodo(todoToRemove: Todo) {
+        let todo = this.todoList.find(
+            todo => todo === todoToRemove
+        );
+        if (todo) {
+            this.todoList.splice(
+                this.todoList.indexOf(todo), 1
+            );
+        }
+    }
+
 }
 
 export const todoStore = new TodoStore();

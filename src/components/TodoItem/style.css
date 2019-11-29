@@ -1,6 +1,20 @@
 div.item-container {
-    padding: 24px 32px;
+    padding: 24px 16px 24px 32px;
     margin: 12px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.close-block {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #DD7373;
+    border-radius: 8px;
+    z-index: 10;
+}
+div.close-block:hover {
+    background-color: #DD7373;
+    transition: 200ms;
 }
 
 div.item-container.complete {
@@ -11,6 +25,8 @@ div.item-container.complete {
 }
 
 div.task-block {
+    max-width: 90%;
+    flex-grow: 1;
     top: 0;
     left: 0;
     position: relative;
