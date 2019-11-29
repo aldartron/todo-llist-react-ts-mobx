@@ -1,22 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2&display=swap');
+
 .App {
-  text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 100px 3fr;
+    grid-gap: 1vw;
+    grid-template-areas:
+            "i f f f"
+            "l l l l"
+            "l l l l"
+    ;
+    max-width: 640px;
+    margin: auto;
 }
 
-.App-logo {
-  height: 40vmin;
+#form-container {
+    grid-area: f;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#list-container {
+    grid-area: l;
 }
 
-.App-link {
-  color: #09d3ac;
+#info-container {
+    grid-area: i;
+}
+
+@media only screen and (max-width: 640px) {
+    .App {
+        grid-template-areas:
+                "i i i i"
+                "f f f f"
+                "l l l l"
+    }
+}
+
+.panel {
+    background-color: white;
+    padding: 12px 24px;
+    border: 1px solid #A3C4BC;
+}
+
+body {
+    color: #313628 !important;
+    background-image: url(what-the-hex.png);
+    font-family: 'Exo 2', sans-serif;
 }

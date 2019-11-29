@@ -1,0 +1,44 @@
+div.item-container {
+    padding: 24px 32px;
+    margin: 12px 0;
+}
+
+div.item-container.complete {
+    border: 1px solid #A3C4BC;
+    color: #A3C4BC;
+    padding-left: 34px;
+    text-decoration: line-through;
+}
+
+div.task-block {
+    top: 0;
+    left: 0;
+    position: relative;
+}
+
+div.item-container.prior-1 {
+    border-left: 3px solid #6290C3;
+}
+div.item-container.prior-1:hover {
+    color: #6290C3;
+}
+
+div.item-container.prior-2 {
+    border-left: 3px solid #519E8A;
+}
+div.item-container.prior-2:hover {
+    color: #519E8A;
+}
+
+div.item-container.prior-3 {
+    border-left: 3px solid #DD7373;
+}
+div.item-container.prior-3:hover {
+    color: #DD7373;
+}
+
+div.item-container:hover {
+    transition: 0.5s;
+    border-left-width: 5px;
+    padding-left: 30px;
+}

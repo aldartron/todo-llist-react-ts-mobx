@@ -1,0 +1,87 @@
+.form {
+    padding: 0;
+    display: flex;
+    width: 100%;
+}
+
+.form textarea {
+    width: 64%;
+    border: none;
+    padding: 12px 16px;
+    font-size: 16px;
+    font-family: inherit;
+    resize: none;
+}
+
+.form textarea:focus {
+    outline: none;
+}
+
+.prior-1 textarea {
+    border: 1px solid #6290C3;
+    border-right: none;
+}
+
+.prior-2 textarea {
+    border: 1px solid #519E8A;
+    border-right: none;
+}
+
+.prior-3 textarea {
+    border: 1px solid #DD7373;
+    border-right: none;
+}
+
+.form select, .form button {
+    width: 18%;
+    background-color: white;
+    border: none;
+}
+
+.form select {
+    font-weight: bold;
+}
+
+select:focus {
+    outline: none;
+}
+
+button {
+    color: white;
+    font-family: inherit;
+}
+
+button:hover {
+    text-decoration: underline;
+}
+
+.prior-1 button {
+    background-color: #6290C3 !important;
+}
+
+.prior-2 button {
+    background-color: #519E8A !important;
+}
+
+.prior-3 button {
+    background-color: #DD7373 !important;
+}
+
+button:focus {
+    outline: none;
+}
+
+.prior-1 select {
+    border: 1px solid #6290C3;
+    color: #6290C3;
+}
+
+.prior-2 select {
+    border: 1px solid #519E8A;
+    color: #519E8A;
+}
+
+.prior-3 select {
+    border: 1px solid #DD7373;
+    color: #DD7373;
+}
