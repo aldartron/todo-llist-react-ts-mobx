@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  todo-mobx-dev:
+    image: todo-mobx:dev
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/app'
+    ports:
+      - '8080:3000'

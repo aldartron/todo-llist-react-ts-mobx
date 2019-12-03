@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3249e205-ff7f-483e-a078-99e836543266" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/TodoActionButton/TodoCancelButton.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TodoActionButton/TodoCloseButton.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TodoActionButton/TodoEditButton.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TodoActionButton/TodoSaveButton.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TodoActionButton/TodoToggleButton.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TodoTask/TodoTaskEditor.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TodoTask/TodoTaskWrapper.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TodoTask/style.css" afterDir="false" />
+    <list default="true" id="3249e205-ff7f-483e-a078-99e836543266" name="Default Changelist" comment="Dockerization">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TodoInfo/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TodoInfo/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TodoActionButton/TodoCloseButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TodoActionButton/TodoCloseButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TodoActionButton/TodoToggleButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TodoActionButton/TodoToggleButton.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/TodoItem/TodoItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TodoItem/TodoItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TodoItem/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TodoItem/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TodoList/TodoList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TodoList/TodoList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stores/TodoStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/TodoStore.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +43,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/TodoActionButton" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
     <property name="ts.external.directory.path" value="C:\Users\ashoydokov\WebstormProjects\todo-react-ts-mobx\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
@@ -99,7 +90,8 @@
       <workItem from="1575025513439" duration="613000" />
       <workItem from="1575027766099" duration="10000" />
       <workItem from="1575278164437" duration="3280000" />
-      <workItem from="1575281479269" duration="18417000" />
+      <workItem from="1575281479269" duration="19089000" />
+      <workItem from="1575364755506" duration="9516000" />
     </task>
     <task id="LOCAL-00001" summary="React + TS + MobX implementation">
       <created>1575009925532</created>
@@ -115,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575010944021</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Editing of task and priority implementation">
+      <created>1575362860472</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1575362860472</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,7 +123,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="React + TS + MobX implementation" />
     <MESSAGE value="Todo removing implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="Todo removing implemented" />
+    <MESSAGE value="Editing of task and priority implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Editing of task and priority implementation" />
   </component>
   <component name="WindowStateProjectService">
     <state x="445" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575357586478">
@@ -135,33 +135,33 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="721" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/62.0.1858.1080/1920.-271.1080.1920@62.0.1858.1080" timestamp="1575005553915" />
-    <state x="603" y="133" key="CommitChangelistDialog2" timestamp="1575010943522">
+    <state x="603" y="133" key="CommitChangelistDialog2" timestamp="1575374176938">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="603" y="133" key="CommitChangelistDialog2/62.0.1858.1080/1920.-271.1080.1920@62.0.1858.1080" timestamp="1575010943522" />
-    <state x="492" y="181" key="SettingsEditor" timestamp="1575280112297">
+    <state x="603" y="133" key="CommitChangelistDialog2/62.0.1858.1080/1920.-271.1080.1920@62.0.1858.1080" timestamp="1575374176938" />
+    <state x="492" y="181" key="SettingsEditor" timestamp="1575365093790">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="492" y="181" key="SettingsEditor/62.0.1858.1080/1920.-271.1080.1920@62.0.1858.1080" timestamp="1575280112297" />
+    <state x="492" y="181" key="SettingsEditor/62.0.1858.1080/1920.-271.1080.1920@62.0.1858.1080" timestamp="1575365093790" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1574940780313">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state width="498" height="446" key="SwitcherDM/62.0.1858.1080/1920.-271.1080.1920@62.0.1858.1080" timestamp="1574940780313" />
-    <state x="583" y="272" key="Vcs.Push.Dialog.v2" timestamp="1575010947845">
+    <state x="583" y="272" key="Vcs.Push.Dialog.v2" timestamp="1575362863911">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="583" y="272" key="Vcs.Push.Dialog.v2/62.0.1858.1080/1920.-271.1080.1920@62.0.1858.1080" timestamp="1575010947845" />
-    <state x="677" y="281" width="627" height="518" key="find.popup" timestamp="1575361637710">
+    <state x="583" y="272" key="Vcs.Push.Dialog.v2/62.0.1858.1080/1920.-271.1080.1920@62.0.1858.1080" timestamp="1575362863911" />
+    <state x="675" y="102" width="627" height="935" key="find.popup" timestamp="1575372300838">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="677" y="281" width="627" height="518" key="find.popup/62.0.1858.1080/1920.-271.1080.1920@62.0.1858.1080" timestamp="1575361637710" />
+    <state x="675" y="102" width="627" height="935" key="find.popup/62.0.1858.1080/1920.-271.1080.1920@62.0.1858.1080" timestamp="1575372300838" />
     <state x="632" y="266" width="700" height="530" key="recent.locations.popup" timestamp="1574938914722">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="632" y="266" width="700" height="530" key="recent.locations.popup/62.0.1858.1080/1920.-271.1080.1920@62.0.1858.1080" timestamp="1574938914722" />
-    <state x="654" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1575291288400">
+    <state x="654" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1575374084952">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="654" y="235" width="672" height="678" key="search.everywhere.popup/62.0.1858.1080/1920.-271.1080.1920@62.0.1858.1080" timestamp="1575291288400" />
+    <state x="654" y="235" width="672" height="678" key="search.everywhere.popup/62.0.1858.1080/1920.-271.1080.1920@62.0.1858.1080" timestamp="1575374084952" />
   </component>
 </project>

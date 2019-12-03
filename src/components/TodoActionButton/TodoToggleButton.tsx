@@ -1,4 +1,4 @@
-import {inject, observer} from "mobx-react";
+import {inject} from "mobx-react";
 import {Todo, todoStore} from "../../stores/TodoStore";
 import React from "react";
 
@@ -18,4 +18,4 @@ const TodoToggleButtonComponent = (props: { todo: Todo }) => {
     )
 };
 
-export const TodoToggleButton = inject('todoStore')(observer(TodoToggleButtonComponent));
+export const TodoToggleButton = inject('todoStore')(TodoToggleButtonComponent);

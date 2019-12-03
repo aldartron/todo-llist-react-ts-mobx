@@ -1,5 +1,5 @@
-import {Todo, todoStore} from "../../stores/TodoStore";
-import {inject, observer} from "mobx-react";
+import {Todo} from "../../stores/TodoStore";
+import {observer} from "mobx-react";
 import React from "react";
 import "./style.css"
 import {TodoTaskWrapper} from "../TodoTask/TodoTaskWrapper";
@@ -36,4 +36,4 @@ const TodoItemComponent = (props: { todo: Todo }) => {
     );
 };
 
-export const TodoItem = inject('todoStore')(observer(TodoItemComponent));
+export const TodoItem = observer(TodoItemComponent);
