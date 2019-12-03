@@ -4,6 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 To run with Docker at port 8080:
 
+### `docker build -t todo-mobx:dev .`
 ### `docker run -it -p 8080:3000 -v %cd%:/app todo-mobx:dev`
 
 or with Docker-compose:

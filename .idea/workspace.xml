@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3249e205-ff7f-483e-a078-99e836543266" name="Default Changelist" comment="Dockerization">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="3249e205-ff7f-483e-a078-99e836543266" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TodoActionButton/TodoCloseButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TodoActionButton/TodoCloseButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TodoActionButton/TodoToggleButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TodoActionButton/TodoToggleButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TodoItem/TodoItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TodoItem/TodoItem.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +84,8 @@
       <workItem from="1575027766099" duration="10000" />
       <workItem from="1575278164437" duration="3280000" />
       <workItem from="1575281479269" duration="19089000" />
-      <workItem from="1575364755506" duration="9516000" />
+      <workItem from="1575364755506" duration="9538000" />
+      <workItem from="1575374337572" duration="332000" />
     </task>
     <task id="LOCAL-00001" summary="React + TS + MobX implementation">
       <created>1575009925532</created>
@@ -114,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575362860472</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Dockerization">
+      <created>1575374297947</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1575374297947</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,7 +125,8 @@
     <MESSAGE value="React + TS + MobX implementation" />
     <MESSAGE value="Todo removing implemented" />
     <MESSAGE value="Editing of task and priority implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Editing of task and priority implementation" />
+    <MESSAGE value="Dockerization" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dockerization" />
   </component>
   <component name="WindowStateProjectService">
     <state x="445" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575357586478">
@@ -135,10 +137,10 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="721" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/62.0.1858.1080/1920.-271.1080.1920@62.0.1858.1080" timestamp="1575005553915" />
-    <state x="603" y="133" key="CommitChangelistDialog2" timestamp="1575374176938">
+    <state x="603" y="133" key="CommitChangelistDialog2" timestamp="1575374297346">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="603" y="133" key="CommitChangelistDialog2/62.0.1858.1080/1920.-271.1080.1920@62.0.1858.1080" timestamp="1575374176938" />
+    <state x="603" y="133" key="CommitChangelistDialog2/62.0.1858.1080/1920.-271.1080.1920@62.0.1858.1080" timestamp="1575374297346" />
     <state x="492" y="181" key="SettingsEditor" timestamp="1575365093790">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
@@ -147,10 +149,10 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state width="498" height="446" key="SwitcherDM/62.0.1858.1080/1920.-271.1080.1920@62.0.1858.1080" timestamp="1574940780313" />
-    <state x="583" y="272" key="Vcs.Push.Dialog.v2" timestamp="1575362863911">
+    <state x="583" y="272" key="Vcs.Push.Dialog.v2" timestamp="1575374300842">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="583" y="272" key="Vcs.Push.Dialog.v2/62.0.1858.1080/1920.-271.1080.1920@62.0.1858.1080" timestamp="1575362863911" />
+    <state x="583" y="272" key="Vcs.Push.Dialog.v2/62.0.1858.1080/1920.-271.1080.1920@62.0.1858.1080" timestamp="1575374300842" />
     <state x="675" y="102" width="627" height="935" key="find.popup" timestamp="1575372300838">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
