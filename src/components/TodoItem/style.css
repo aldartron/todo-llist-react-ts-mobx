@@ -5,28 +5,27 @@ div.item-container {
     justify-content: space-between;
 }
 
-div.close-block {
-    width: 16px;
-    height: 16px;
-    border: 1px solid #DD7373;
-    border-radius: 8px;
+div.control-block {
+    margin: 0 8px;
     z-index: 10;
+    cursor: pointer;
 }
-div.close-block:hover {
-    background-color: #DD7373;
-    transition: 200ms;
+
+div.control-block a {
+    text-decoration: none;
+    color: #313628;
 }
 
 div.item-container.complete {
     border: 1px solid #A3C4BC;
     color: #A3C4BC;
     padding-left: 34px;
-    text-decoration: line-through;
 }
 
 div.task-block {
     max-width: 90%;
     flex-grow: 1;
+    padding-left: 12px;
     top: 0;
     left: 0;
     position: relative;
@@ -35,22 +34,13 @@ div.task-block {
 div.item-container.prior-1 {
     border-left: 3px solid #6290C3;
 }
-div.item-container.prior-1:hover {
-    color: #6290C3;
-}
 
 div.item-container.prior-2 {
     border-left: 3px solid #519E8A;
 }
-div.item-container.prior-2:hover {
-    color: #519E8A;
-}
 
 div.item-container.prior-3 {
     border-left: 3px solid #DD7373;
-}
-div.item-container.prior-3:hover {
-    color: #DD7373;
 }
 
 div.item-container:hover {

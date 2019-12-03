@@ -1,0 +1,29 @@
+div.todo-editor {
+    display: flex;
+}
+
+div.task-edit {
+    flex-grow: 1;
+    margin-right: 16px;
+}
+
+span.completed {
+    text-decoration: line-through;
+}
+
+div.task-edit input {
+    border: 1px solid #A3C4BC;
+    padding: 6px 0 6px 8px;
+    font: inherit;
+    width: 100%;
+    height: 42px;
+}
+
+div.task-edit input:focus {
+    outline: none;
+}
+
+div.priority-edit select {
+    padding: 6px 0;
+    height: 100%
+}

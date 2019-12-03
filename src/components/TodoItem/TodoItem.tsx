@@ -2,10 +2,16 @@ import {Todo, todoStore} from "../../stores/TodoStore";
 import {inject, observer} from "mobx-react";
 import React from "react";
 import "./style.css"
+import {TodoTaskWrapper} from "../TodoTask/TodoTaskWrapper";
+import {TodoEditButton} from "../TodoActionButton/TodoEditButton";
+import {TodoToggleButton} from "../TodoActionButton/TodoToggleButton";
+import {TodoCloseButton} from "../TodoActionButton/TodoCloseButton";
+import {Route, Switch} from "react-router";
+import {TodoCancelButton} from "../TodoActionButton/TodoCancelButton";
 
-const TodoItemComponent = (props: {todo: Todo}) => {
+const TodoItemComponent = (props: { todo: Todo }) => {
     let todo = props.todo;
-    let style = '';
+    let style;
 
     if (todo.isComplete) {
         style = ' complete '
@@ -13,22 +19,19 @@ const TodoItemComponent = (props: {todo: Todo}) => {
         style = ' prior-' + todo.priority
     }
 
-    const onClick = () => {
-        todoStore.toggleTodo(todo)
-    };
-
-    const onClose= () => {
-        todoStore.removeTodo(todo)
-    };
-
     return (
-        <div onClick={onClick}
-             className={'item-container panel' + style}
-        >
-            <div className={'task-block'}>{ props.todo.task }</div>
-            <div onClick={onClose}
-                 className={'close-block'}
-            > </div>
+        <div className={'item-container panel' + style}>
+            <TodoToggleButton todo={todo}/>
+            <div className={'task-block'}>
+                <TodoTaskWrapper todo={todo}/>
+            </div>
+            <Switch>
+                <Route path={'/' + todo.id + '/edit/:id'} render={() => (
+                    <TodoCancelButton/>
+                )}/>
+                <Route render={() => (<TodoEditButton todo={todo}/>)}/>
+            </Switch>
+            <TodoCloseButton todo={todo}/>
         </div>
     );
 };

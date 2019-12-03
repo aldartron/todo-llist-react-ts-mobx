@@ -1,4 +1,4 @@
-import {action, computed, observable, reaction} from "mobx";
+import {action, computed, observable} from "mobx";
 
 /**
  * Task's priority from lower to higher
@@ -6,21 +6,25 @@ import {action, computed, observable, reaction} from "mobx";
 export type Priority = 1 | 2 | 3
 
 export interface Todo {
+    id: number
     task: string
     priority: Priority
     isComplete: boolean
 }
 
 export class TodoStore {
-
     @observable todoList: Todo[] = [];
 
     constructor() {
         this.todoList = [
-            {task: "Make America great again", priority: 2, isComplete: false},
-            {task: "Fly to the Moon", priority: 1, isComplete: false},
-            {task: "Become a java-developer", priority: 3, isComplete: true}
+            {id: 1, task: "Make America great again", priority: 2, isComplete: false},
+            {id: 2, task: "Fly to the Moon", priority: 1, isComplete: false},
+            {id: 3, task: "Become a java-developer", priority: 3, isComplete: true}
         ];
+    }
+
+    todoById(id: number): Todo | undefined {
+        return this.todoList.find(todo => todo.id === id)
     }
 
     @computed
@@ -52,8 +56,8 @@ export class TodoStore {
 
     @action
     addTodo(task: string, priority?: Priority) {
-        console.log(this.todoList);
         this.todoList.push({
+            id: this.todoList.length + 1,
             task: task,
             priority : priority ? priority : 2,
             isComplete: false
@@ -61,11 +65,21 @@ export class TodoStore {
     }
 
     @action
+    updateTodo(id: number, task: string, priority: Priority) {
+        let todo = this.todoList.find(
+            todo => todo.id === id
+        );
+        if (todo) {
+            todo.task = task;
+            todo.priority = priority
+        }
+    }
+
+    @action
     toggleTodo(todoToToggle: Todo) {
         let todo = this.todoList.find(
             todo => todo === todoToToggle
         );
-
         if (todo) {
             todo.isComplete = !todo.isComplete;
         }
@@ -82,7 +96,6 @@ export class TodoStore {
             );
         }
     }
-
 }
 
 export const todoStore = new TodoStore();
